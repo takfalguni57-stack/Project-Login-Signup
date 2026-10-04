@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background :linear-gradient(90deg,skyblue,violet);
+            /* padding: 20px 0; */
+        }
+        form{
+            height: 65%;
+            width: 38%;
+            max-width: 400px;
+            /* max-height: 1000px; */
+            /* margin-top: 70px; */
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            box-sizing: border-box;
+        }
+        label{
+            border-radius: 10px;
+            /* background-color: lightblue; */
+            height: 40%;
+            width: 90%;
+        }
+        .user,.password,{
+            height: 70px;
+            width: 100%;
+            padding: 8px 12px;
+            font-size: 16px;
+            margin: auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            /* margin-left: 30px; */
+            /* border: 1px solid black; */
+        }
+        h1{
+            margin-top: 10%;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+        .button>p{
+            margin: auto;
+            width: 80%;
+            /* text-align: center; */
+            margin-top: 20px;
+            /* margin-left:90px; */   
+        }
+        button{
+            background: linear-gradient(90deg,skyblue,violet);
+            /* margin-top: 10px; */
+            /* margin-left: 55px; */
+            height: 50px;
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+        }
+        .input{
+            height: 42px;
+            width: 100%;
+            padding: 8px 12px;
+            font-size: 15px;
+            box-sizing: border-box;
+            margin: auto;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            margin: 3%;
+        }
+        input{
+            margin: 3%;
+        }
+        .password>p{
+            margin-top: 3%;
+        }
+        p.forgot{
+            text-align: left;
+            margin-top: 15px;
+        }
+        p.signup{
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+     <div class="box">
+        <form action="">
+            <h1 align="center">Login form</h1>
+            <div class="user">
+                <label for="">Username</label><br>
+                <input type="text" placeholder="xyz@gmail.com"><br>
+            </div>
+            <div class="password">
+                <label for="password">password</label><br>
+                <input type="password" placeholder="xyz123"><br>
+                <p class="forgot">Forgot password?</p>
+                 </div>
+                 <div class="button">
+                    <button>Login</button>
+                 <p class="signup">Not a member? <a href="signup.html">sign_up_now</a></p>
+                 </div>
+        </form>
+    </div>
+</body>
+</html>
